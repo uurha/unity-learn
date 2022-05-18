@@ -84,10 +84,10 @@ body {
 
 .inner-preamble {
     margin: auto;
-    width: 60%;
+    width: 65%;
 
     /* visual styling */
-    text-align: justify !important;
+    text-align: center !important;
 }
 
 .preamble {
