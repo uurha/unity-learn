@@ -49,11 +49,10 @@ body {
 }
 
 #diagram {
-    scroll-margin-top: 3em;
+    scroll-margin-top: 2.5em;
     padding-left: 3%;
     padding-right: 3%;
 }
-
 
 .back-top {
     overflow: hidden;
