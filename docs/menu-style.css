@@ -1,0 +1,38 @@
+﻿.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+input:checked ~ .menu-content {
+    max-height: 400px;
+}
+
+.collapsible-menu {
+    text-align: center;
+}
+
+.collapsible-menu ul {
+    list-style-type: none;
+    padding-inline: 0;
+    margin-block: 0;
+    padding: 0;
+}
+
+.collapsible-menu a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.collapsible-menu label {
+    display: block;
+    cursor: pointer;
+    font-size: var(--nav-font-size);
+}
+
+input#menu {
+    display: none;
+}

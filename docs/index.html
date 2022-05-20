@@ -5,26 +5,43 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu-style.css">
 </head>
 <body>
-<nav id="navbar">
-    <a href="https://github.com/uurha" target="_blank">GitHub</a>
+<nav id="nav" class="bar">
     <a href="#diagram">Diagram</a>
+    <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu">Social Links</label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="https://github.com/uurha/unity-learn" target="_blank">GitHub</a></li>
+                <li><a href="https://t.me/unity_tech_learn" target="_blank">Chat</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
+
 
 <div class="custom-diagram-background preamble">
     <h2>
         How to learn Unity
     </h2>
-    <div class="inner-preamble">
-        Nice to meet you. I hope you know what we will do. Anyway, here some background of this project.
-        <br>
-        My name is Arcueid, and I'm working with Unity since <i>September 2019</i>.
-        <br>
-        <i>Late 2021</i> I understood that in Unity community a lot of question how to start learning or how to improve your level.
-        <br>
-        <br>
-        So here diagram <b>"How to learn Unity"</b>.
+    <div class="inner">
+        <p class="justified">
+            Nice to meet you. I hope you know what we will do. Anyway, here some background of this project.
+            <br>
+            <br>
+            My name is Arcueid, and I'm working with Unity since <i>September 2019</i>.
+            <br>
+            <br>
+            At the <i>end of 2021</i> I understood that in Unity community a lot of question how to start learning or
+            how to improve your level.
+        </p>
+
+        <p class="centered">
+            So here diagram <b>"How to learn Unity"</b>.
+        </p>
     </div>
 </div>
 
@@ -33,7 +50,11 @@
          data-diagram-options='{"highlight": "blue"}'></div>
 
 </div>
-<a href="#" class="back-top">Back to Top &#8593;</a>
+
+<footer id="footer" class="bar">
+    <a href="https://github.com/uurha" target="_blank">Creator's GitHub</a>
+    <a href="https://github.com/uurha/unity-learn/issues" target="_blank">Leave your feedback</a>
+</footer>
 </body>
 
 </html>

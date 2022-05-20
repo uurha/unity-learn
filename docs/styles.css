@@ -5,43 +5,67 @@
     }
 }
 
+
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     min-height: 100%;
 }
 
-#navbar {
-    overflow: hidden;
+#footer {
+    position: relative;
+    justify-content: center;
+}
 
+#nav {
     z-index: 1000;
     position: -webkit-sticky;
     position: sticky;
+    justify-content: flex-end;
 
     /* visual styling */
-    background-color: #333;
     top: 0;
 }
 
-#navbar a {
+#nav a {
     float: right;
+    font-size: var(--nav-font-size);
+}
+
+#footer a {
+    font-size: var(--footer-font-size);
+}
+
+.bar {
+    width: 100%;
+    display: inline-flex;
+    align-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+    /* visual styling */
+    background-color: var(--bar-back-color);
+}
+
+.bar a, .bar label {
     display: block;
 
     /* visual styling */
-    padding: 14px 16px;
+    padding: var(--nav-padding-vertical) var(--nav-padding-horisontal);
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
 }
 
-#navbar a:hover {
+.bar a:hover, .bar label:hover {
 
     /* visual styling */
     background-color: #eee;
     color: black;
 }
 
-#navbar a.active {
+.bar a.active, .bar label:checked {
 
     /* visual styling */
     background-color: #04AA6D;
@@ -49,7 +73,7 @@ body {
 }
 
 #diagram {
-    scroll-margin-top: 2.5em;
+    scroll-margin-top: calc(var(--nav-padding-vertical) * var(--nav-scroll-offset-factor));
     padding-left: 3%;
     padding-right: 3%;
 }
@@ -69,7 +93,6 @@ body {
     /* visual styling */
     text-decoration: none;
     padding: 10px;
-    font-family: sans-serif;
     color: #fff;
     background: #000;
     border-radius: 100px;
@@ -79,15 +102,21 @@ body {
 .custom-diagram-background {
     /* visual styling */
     padding-top: 10px;
-    background: #eee;
+    padding-bottom: 10px;
+    background: var(--default-back-color);
 }
 
-.inner-preamble {
+.centered {
+    text-align: center !important;
+}
+
+.justified {
+    text-align: justify !important;
+}
+
+.preamble .inner {
     margin: auto;
     width: 65%;
-
-    /* visual styling */
-    text-align: center !important;
 }
 
 .preamble {
@@ -99,4 +128,14 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+}
+
+:root {
+    --nav-scroll-offset-factor: 3;
+    --nav-padding-vertical: 20px;
+    --nav-padding-horisontal:  32px;
+    --bar-back-color: #333;
+    --default-back-color: #eee;
+    --nav-font-size: 17px;
+    --footer-font-size: 12px;
 }
