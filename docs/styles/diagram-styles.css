@@ -1,0 +1,12 @@
+﻿
+#diagram {
+    scroll-margin-top: calc(var(--bar-padding-vertical) * var(--nav-scroll-offset-factor));
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.custom-diagram {
+    /* visual styling */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

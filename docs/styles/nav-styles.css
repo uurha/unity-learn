@@ -1,0 +1,25 @@
+﻿.bar.navigation {
+    z-index: 1000;
+    position: -webkit-sticky;
+    position: sticky;
+
+    height: 60px;
+    /* visual styling */
+    top: 0;
+}
+
+.bar.navigation.fixed-wrapper {
+    position: fixed;
+    left: 0;
+}
+
+.bar.navigation .inner {
+    display: flex;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+
+:root{
+    --nav-scroll-offset-factor: 2.5;
+    --nav-font-size: 17px;
+}

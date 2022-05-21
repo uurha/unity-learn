@@ -1,0 +1,54 @@
+﻿.bar {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* visual styling */
+}
+
+.bar.background, .bar .background{
+    background-color: var(--bar-back-color);
+}
+
+.bar .item {
+    display: block;
+
+    /* visual styling */
+    padding: var(--bar-padding-vertical) var(--bar-padding-horisontal);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+    color: var(--default-back-color);
+    min-width: 130px;
+}
+
+.bar .category {
+    border-right: var(--category-border);
+    padding: var(--category-padding-vertical) var(--bar-padding-horisontal);
+}
+
+.bar .category:hover {
+    border-right: var(--category-border-hover);
+    padding: var(--category-padding-vertical) var(--bar-padding-horisontal);
+}
+
+.bar .category-name {
+    padding-top: var(--category-padding-vertical);
+}
+
+.bar .control:hover {
+    /* visual styling */
+    background-color: var(--default-back-color);
+    color: var(--bar-text-color);
+}
+
+:root {
+    --category-border: 3px solid var(--default-back-color);
+    --category-border-hover: 2px solid var(--bar-back-color);
+    --bar-back-color: #333;
+    --bar-text-color: black;
+    --category-padding-vertical: 10px;
+    --bar-padding-vertical: 20px;
+    --bar-padding-horisontal: 20px;
+}

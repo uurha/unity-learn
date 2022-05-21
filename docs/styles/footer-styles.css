@@ -1,0 +1,12 @@
+.bar.footer {
+    position: relative;
+    justify-content: center;
+}
+
+.bar.footer .item {
+    font-size: var(--footer-font-size);
+}
+
+:root{
+    --footer-font-size: 12px;
+}
