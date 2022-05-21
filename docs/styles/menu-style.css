@@ -3,11 +3,11 @@
     transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
-.menu.expanded ~ .menu-content {
+.menu-label.expanded ~ .menu-content {
     max-height: 1000px;
 }
 
-.menu.expanded {
+.menu-label.expanded {
     background-color: #eee;
     color: var(--bar-text-color) !important;
 }
@@ -21,18 +21,4 @@
     padding-inline: 0;
     margin-block: 0;
     padding: 5px;
-}
-
-.collapsible-menu a {
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: right;
-}
-
-.collapsible-menu label {
-    display: block;
-    cursor: pointer;
-    font-size: var(--nav-font-size);
 }

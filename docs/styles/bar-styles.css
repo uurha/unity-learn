@@ -41,6 +41,7 @@
     /* visual styling */
     background-color: var(--default-back-color);
     color: var(--bar-text-color);
+    cursor: pointer;
 }
 
 :root {
