@@ -1,41 +1,31 @@
-﻿let clicked;
+﻿let enterMenuContent;
 const expanded = "expanded";
 const menu = ".menu-label";
+const menuSelector = $(menu);
 
-$(menu).mouseover(function (e) {
-    reset();
+menuSelector.mouseover(function (e) {
+    reset(menuSelector);
     const target = $(e.target);
     const f = target.attr("for");
-    const targetFor = $(`#${target.attr("for")}`)
-    targetFor.mouseleave(function () {
-        reset();
+    const targetFor = $(`#${target.attr("for")}`);
+
+    targetFor.mouseenter(function () {
+        enterMenuContent = true;
+    }).mouseleave(function () {
+        reset(menuSelector);
     })
-    if (!clicked) {
-        if (!target.hasClass(expanded))
-            target.addClass(expanded);
-    }
-}).click(function (e) {
+
+    if (!target.hasClass(expanded))
+        target.addClass(expanded);
+}).mouseleave(function (e) {
     const target = $(e.target);
-    clicked = !clicked;
-    if (clicked) {
-        target.removeClass(expanded);
-    } else {
-        if (!target.hasClass(expanded))
-            target.addClass(expanded);
-    }
-})
-
-
-$(document).mouseup(function (e) {
-    const container = $(menu);
-    const target = $(e.target);
-
-    if (!container.is(target) && container.has(target).length === 0) {
-        container.removeClass(expanded);
-    }
+    setTimeout(function () {
+        if (enterMenuContent) return;
+        reset(target);
+    }, 20)
 });
 
-function reset() {
-    $(menu).removeClass(expanded)
-    clicked = false;
+function reset(target) {
+    target.removeClass(expanded)
+    enterMenuContent = false;
 }
