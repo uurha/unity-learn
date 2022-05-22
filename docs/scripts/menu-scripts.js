@@ -3,7 +3,7 @@ const expanded = "expanded";
 const menu = ".menu-label";
 const menuSelector = $(menu);
 
-menuSelector.mouseover(function (e) {
+menuSelector.mouseenter(function (e) {
     reset(menuSelector);
     const target = $(e.target);
     const f = target.attr("for");

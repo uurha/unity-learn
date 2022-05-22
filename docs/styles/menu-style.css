@@ -12,6 +12,9 @@
     color: var(--bar-text-color) !important;
 }
 
+.menu-label{
+}
+
 .collapsible-menu {
     overflow: hidden;
 }

@@ -19,7 +19,15 @@
 </div>
 <div class="bar navigation fixed-wrapper">
     <div class="inner">
-        <a href="#diagram" class="item control text-centered">Diagram</a>
+        <div class="collapsible-menu background">
+            <a for="grades" class="menu-label item control text-centered" href="#diagram">Diagram</a>
+            <div id="grades" class="menu-content text-right">
+                <ul>
+                    <li class="item category-name">Grades</li>
+                </ul>
+            </div>
+        </div>
+
 
         <div class="collapsible-menu background">
             <label for="documentation" class="item control menu-label text-centered">Documentation</label>
@@ -39,7 +47,7 @@
         </div>
 
         <div class="collapsible-menu background">
-            <label for="social-links"  class="item control menu-label text-centered">Social Links</label>
+            <label for="social-links" class="item control menu-label text-centered">Social Links</label>
             <div id="social-links" class="menu-content text-right">
                 <ul>
                     <li><a href="https://github.com/uurha/unity-learn" target="_blank"
@@ -75,11 +83,11 @@
         </p>
     </div>
 </div>
-
 <div class="custom-diagram default-background" id="diagram">
     <div class="drawio-diagram" data-diagram-url="https://uurha.github.io/unity-learn/unity-learn.xml"
          data-diagram-options='{"highlight": "blue"}'></div>
 
+    <script type="text/javascript" src="scripts/grade-scripts.js"></script>
 </div>
 
 <footer class="bar footer background">

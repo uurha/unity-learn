@@ -5,6 +5,17 @@
     padding-right: 3%;
 }
 
+#junior{
+    scroll-margin-top: calc(var(--bar-padding-vertical) * var(--nav-scroll-offset-factor));
+}
+
+#middle{
+    scroll-margin-top: calc(var(--bar-padding-vertical) * var(--nav-scroll-offset-factor));
+}
+#senior{
+    scroll-margin-top: calc(var(--bar-padding-vertical) * var(--nav-scroll-offset-factor));
+}
+
 .custom-diagram {
     /* visual styling */
     padding-top: 10px;
