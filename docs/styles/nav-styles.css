@@ -20,6 +20,6 @@
 }
 
 :root{
-    --nav-scroll-offset-factor: 2.5;
+    --nav-scroll-offset-factor: 3;
     --nav-font-size: 17px;
 }
