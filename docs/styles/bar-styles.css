@@ -29,7 +29,6 @@
 
 .bar .category:hover {
     border-right: var(--category-border-hover);
-    padding: var(--category-padding-vertical) var(--bar-padding-horisontal);
 }
 
 .bar .category-name {
