@@ -3,7 +3,6 @@ let grades = [
 ];
 
 const id = `id`;
-const inner = `inner`;
 const link = `link`;
 const customAttribute = `custom-attribute`;
 
@@ -25,11 +24,7 @@ $(window).load(function () {
 
 function onModified() {
     const container = $(`.${diagramContainer}`)
-    if (container !== undefined) {
-        if (!container.hasClass(inner)) {
-            container.addClass(inner);
-        }
-        
+    if (container !== undefined) {        
         grades.forEach(value => {
             const element = setup(value, gradeName, [scrollBottomClass, blinkAnchorClass]);
             if (element.attr(id) !== value) {
