@@ -12,6 +12,10 @@
     }
 }
 
+.inner{
+    margin: auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
