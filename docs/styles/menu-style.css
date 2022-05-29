@@ -3,6 +3,9 @@
     transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
+.menu-label {
+}
+
 .menu-label.expanded ~ .menu-content {
     max-height: 1000px;
 }
@@ -12,7 +15,25 @@
     color: var(--bar-text-color) !important;
 }
 
-.menu-label{
+.svg-triangle{
+    width: 10px;
+    height: 10px;
+    overflow: visible;
+}
+
+.menu-label.expanded > .svg-triangle path{
+    fill: var(--bar-back-color);
+    stroke: var(--bar-back-color);
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.svg-triangle path {
+    fill: var(--default-back-color);
+    stroke: var(--default-back-color);
+    stroke-width: 3;
+    transform-origin: center;
+    transition: transform 0.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 .collapsible-menu {

@@ -4,6 +4,11 @@
     padding-right: 3%;
 }
 
+.link {
+    text-decoration: underline;
+    color: blue !important;
+}
+
 .custom-diagram {
     /* visual styling */
     padding-top: 10px;
