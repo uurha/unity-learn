@@ -1,7 +1,10 @@
 ﻿
 #diagram {
-    padding-left: 3%;
-    padding-right: 3%;
+}
+
+.geDiagramContainer{
+    touch-action: auto !important;
+    margin: auto;
 }
 
 .link {
@@ -13,4 +16,18 @@
     /* visual styling */
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.blink-anchor:target {
+    animation-name: blink;
+    animation-delay: var(--after-scroll-animation-delay);
+    animation-direction: normal;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+}
+
+@keyframes blink {
+    0% { color: rgba(0,0,0,.9); }
+    100% { color: rgba(0,0,0,0); }
 }
