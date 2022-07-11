@@ -1,9 +1,9 @@
 ﻿
-.preamble .inner {
+.text-section .inner {
     width: 65%;
 }
 
-.preamble {
+.text-section {
     margin-bottom: 1%;
 
     /* visual styling */
@@ -11,5 +11,4 @@
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    text-align: center;
 }

@@ -12,12 +12,6 @@
     color: blue !important;
 }
 
-.custom-diagram {
-    /* visual styling */
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 .blink-anchor:target {
     animation-name: blink;
     animation-delay: var(--after-scroll-animation-delay);
